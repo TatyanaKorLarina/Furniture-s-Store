@@ -1,0 +1,33 @@
+$center-width-desktop: 1200px;
+$center-width-tablet: 786px;
+$center-padding-desktop: calc(50% - ($center-width-desktop / 2));
+$center-padding-tablet: calc(50% - ($center-width-tablet / 2));
+
+$top-height: 400px;
+$top-bg-color: #C4C4C4;
+$top-color: #FFFFFF;
+
+$header-height: 77px;
+$header-height-mobile: 57px;
+$header-border: 0.5px solid rgba(255, 255, 255, 0.8);
+
+$for-gap-desktop: 32px;
+$for-gap-tablet: 30px;
+$for-gap-mobile: 16px;
+$for-margin: 64px;
+$for-margin-mobile: 32px;
+$for-block-height-desktop: 415px;
+$for-block-height-tablet: 265px;
+$for-block-height-mobile-big: 245px;
+$for-block-height-mobile: calc($for-block-height-mobile-big + 130px);
+
+$product-gap-desktop: 56px 32px;
+$product-gap-desktop-catalog: 48px 32px;
+$product-gap-tablet: 39px 29px;
+$product-gap-tablet-catalog: 30px;
+$product-gap-mobile: 32px;
+
+$footer-height: 207px;
+$footer-height-mobile: 366px;
+$footer-padding: 32px;
+$footer-bg: #F7F6F6;

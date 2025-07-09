@@ -1,0 +1,90 @@
+.top {
+    &__title {
+        margin-top: 127px;
+        @extend .content__title;
+    }
+}
+.top-catalog {
+    background: url(../img/bg-catalog.jpg) center/cover no-repeat, $top-bg-color;
+}
+
+.main {
+    &__catalog {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .catalog {
+        &__head-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .head-section {
+            &__bread-crumbs {
+                list-style-type: none;
+                display: flex;
+                gap: 10px;
+            }
+            .bread-crumbs {
+                &__here {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #000000;
+                }
+
+                &__link {
+                    @extend .bread-crumbs__here;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: #888888;
+                    }
+                }
+
+                &__item:not(:last-child)::after {
+                    content: "/";
+                    @extend .bread-crumbs__here;
+                    margin-left: 10px;
+                }
+            }
+
+            &__select {
+                width: 288px;
+                height: 41px;
+                padding-left: 15px;
+                background: url(../img/arrow.svg) 250px center no-repeat;
+                border: 1px solid #C4C4C4;
+                border-radius: 20px;
+                outline: none;
+                appearance: none;
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+            }
+        }
+
+        &__more {
+            @extend .main__link;
+        }
+    }
+
+    &__product--in-catalog {
+        gap: $product-gap-desktop-catalog;
+    }
+}
+
+.footer {
+    .form {
+        &__text--roboto {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
